@@ -1,0 +1,34 @@
+{
+  "name": "coalescify",
+  "version": "1.0.1",
+  "repository": "https://github.com/ragrag/coalescify",
+  "module": "build/index.js",
+  "devDependencies": {
+    "bun-types": "latest",
+    "tsup": "^7.2.0",
+    "typescript": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.2.0"
+  },
+  "exports": {
+    ".": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --out-dir=build",
+    "test": "bun test"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  },
+  "type": "module",
+  "types": "./build/index.d.ts"
+}
