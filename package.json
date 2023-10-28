@@ -1,6 +1,6 @@
 {
   "name": "coalescify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "https://github.com/ragrag/coalescify",
   "module": "build/index.js",
   "devDependencies": {
@@ -30,5 +30,11 @@
     "clean": true
   },
   "type": "module",
-  "types": "./build/index.d.ts"
+  "types": "./build/index.d.ts",
+  "keywords": [
+    "async",
+    "inflight",
+    "promise",
+    "coalesce"
+  ]
 }
