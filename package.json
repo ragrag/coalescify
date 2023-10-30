@@ -1,6 +1,6 @@
 {
   "name": "coalescify",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "repository": "https://github.com/ragrag/coalescify",
   "module": "build/index.js",
   "devDependencies": {
